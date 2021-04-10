@@ -1,16 +1,30 @@
 Package: statdata
-Title: What the Package Does (One Line, Title Case)
-Version: 0.0.0.9000
-Authors@R: 
-    person(given = "First",
-           family = "Last",
-           role = c("aut", "cre"),
-           email = "first.last@example.com",
-           comment = c(ORCID = "YOUR-ORCID-ID"))
-Description: What the package does (one paragraph).
-License: `use_mit_license()`, `use_gpl3_license()` or friends to
-    pick a license
+Type: Package
+Title: Funções e Banco de Dados para o Ensino de Estatística
+Version: 0.1.0
+Date: 2021-04-08
+Authors@R: c(person("Bastos", "Fernando de Souza", email="fernando.bastos@ufv.br", role = "aut"), 
+             person("Alexandre", email="alexandre@gmail.com", role = "cre"))
+Maintainer: The package maintainer <fernando.bastos@ufv.br>
+Description: More about what it does (maybe more than one line)
+    Use four spaces when indenting paragraphs within the Description.
+License: GPL-3
 Encoding: UTF-8
 LazyData: true
-Roxygen: list(markdown = TRUE)
+Depends:
+    R (>= 4.0.0)
+Imports: 
+    data.table,
+    tidyverse,
+    plotly,
+    magrittr,
+    ggplot2
+Suggests:
+    lattice,
+    latticeExtra,
+    reshape,
+    knitr,
+    rmarkdown,
+    shiny,
+    MASS
 RoxygenNote: 7.1.1.9000
